@@ -84,10 +84,24 @@ class ninjaGod {
     }
 
 }
-// OOP inheritance
-let HamzFake = new ninjaGod("HamzFake", "Magenko ", "Fire", "Upside Down Knife Throw");
+// OOP inheritance objects inheriting properties and methods from the classes they were instantiated
+let HamzSus = new ninjaGod("HamzFake", "Magenko ", "Fire", "Upside Down Knife Throw");
 
-display(HamzFake.name());
-display(HamzFake.Melee());
-display(HamzFake.Jutsu());
-display(HamzFake.Sharinga());
+// display(HamzFake.name());
+// display(HamzFake.Melee());
+// display(HamzFake.Jutsu());
+// display(HamzFake.Sharinga());
+
+// OOP polymorphism
+class UchihaGod extends ninjaGod{
+    constructor(name, ability, style, move){
+        super(name, ability, style, move)
+        this.village = "Hidden Leaf;"
+    }
+
+    combo(){
+        return "Activate: " + super.Sharinga() + "Combo with " + super.Melee();
+    }
+}
+
+let HamzSus = new ninjaGod("HamzFake", "Magenko ", "Fire", "Upside Down Knife Throw");
