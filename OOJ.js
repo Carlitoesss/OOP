@@ -104,4 +104,4 @@ class UchihaGod extends ninjaGod{
     }
 }
 
-let HamzSus = new ninjaGod("HamzFake", "Magenko ", "Fire", "Upside Down Knife Throw");
+let HamzFake = new ninjaGod("HamzFake", "Magenko ", "Fire", "Upside Down Knife Throw");
